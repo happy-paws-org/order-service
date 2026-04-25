@@ -1,4 +1,4 @@
-name: Appointment Service CI
+name: Order Service CI
 
 on:
   push:
@@ -15,7 +15,7 @@ jobs:
   ci:
     uses: happy-paws-org/happy-paws-platform/.github/workflows/python-ci.yaml@develop
     with:
-      service_name: appointment-service
+      service_name: order-service
       python_version: "3.11"
       dockerfile: Dockerfile
     secrets: inherit
